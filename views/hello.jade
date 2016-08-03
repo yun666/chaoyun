@@ -1,0 +1,57 @@
+html
+  head 
+    title!=title
+    script(src='http://static.eyaos.com/lib/jquery/dist/jquery.min.js')
+    link(type='text/css', href='/static/css/master.css', rel='stylesheet')
+  body
+    .top
+      h1!=message
+      h1 hello TZ
+    .main
+      .mainleft
+        button.btn1(name='button1', onclick='showTxt(0)') 个人简介
+        button.btn1(name='button2',onclick='showTxt(1)') 专业介绍
+        button.btn1(name='button3',onclick='showTxt(2)') 参与项目
+        button.btn1(name='button4',onclick='showTxt(3)') 给我留言
+      .mainright
+        div(class='panel')
+          textarea(cols='30')
+            | 个人简介br
+            |    wjflasjffiapsoefjjflajfjjas;jsf;ajsfjjff
+        div(class='panel')
+          textarea(cols='30')
+            |zhuanyejieshao
+        div(class='panel')
+          textarea(cols='30')
+            |canyuxiangmu
+        div(class='panel')
+          table
+            tr
+              td
+                | 昵称:
+              td
+                input(name='a', type='text',id='a')
+            tr
+              td
+                | 年龄：
+              td
+                input(name='b', type='number',id='b')
+            tr
+              td
+                | 留言信息：
+              td
+                input(name='c', type='text',id='c')
+            tr
+              td
+                input(type='reset', value='重置')
+              td
+                input(type='submit', id='leaveword', value='留言')
+           button(name='wordsList',type='button',id="showList")
+             | 展开留言列表
+          div(class="msg-table")
+            table(name='showList', id='showList')
+              tr
+                th 昵称
+                th 年龄
+                th 留言信息
+    script(src='/static/script/master.js')
