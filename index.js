@@ -9,7 +9,8 @@ var connection = mysql.createConnection({
 	user:'root',
 	password:'mysql123',
 	database:'blog'
-});//获取数据库连接
+});
+//获取数据库连接
 
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
