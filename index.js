@@ -1,5 +1,6 @@
 var express = require('express');
-var bodyParser = require('body-parser');  //express的中间件，用来解析post参数，用于解析客户端请求的body中的内容,内部
+var bodyParser = require('body-parser');  
+//express的中间件，用来解析post参数，用于解析客户端请求的body中的内容,内部
 //使用JSON编码处理,url编码处理以及对于文件的上传处理.
 var mysql =require('mysql');
 
