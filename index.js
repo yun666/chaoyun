@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');  //express的中间件，用来解析po
 var mysql =require('mysql');
 
 var app = express();
+
 var connection = mysql.createConnection({
 	host:'localhost',
 	user:'root',
